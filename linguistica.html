@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section id="main-header">
+        <h1 class="header-text-intro">El Himno Nacional</h1>
+    </section>
+
+    <div class="content-container">
+        <!-- Video del Himno Nacional -->
+        <section id="video-himno">
+            <h2>Video del Himno Nacional Mexicano</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cDAjDDdPqvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <!-- Imagen Representativa del Himno Nacional -->
+        <section id="image-himno">
+            <h2>Imagen Representativa del Himno Nacional</h2>
+            <img src="images/imagen_himno.png" alt="Imagen del Himno Nacional">
+            <p>El Himno Nacional, junto con la Bandera y el Escudo Nacional, es uno de los símbolos patrios de México.</p>
+        </section>
+    </div>
+
+    <!-- Texto del Himno Nacional Mexicano -->
+    <section id="himno-text">
+        <h2>Himno Nacional Mexicano</h2>
+        <p>
+            <span class="verse">Mexicanos, al grito de guerra</span><br>
+            <span class="verse">El acero aprestad y el bridón</span><br>
+            <span class="verse">Y retiemble en sus centros la tierra</span><br>
+            <span class="verse">Al sonoro rugir del cañón</span><br>
+            <span class="verse">Y retiemble en sus centros la tierra</span><br>
+            <span class="verse">Al sonoro rugir del cañón</span><br><br>
+
+            <span class="verse">Ciña ¡oh patria! tus sienes de oliva</span><br>
+            <span class="verse">De la paz en arcángel divino</span><br>
+            <span class="verse">Que en el cielo tu eterno destino por el dedo de Dios se escribió</span><br><br>
+
+            <span class="verse">Más si osare un extraño enemigo profanar con su planta tu suelo</span><br>
+            <span class="verse">Piensa ¡oh patria querida! que el cielo un soldado en cada hijo te dio</span><br><br>
+
+            <span class="verse">¡Guerra! ¡Guerra sin tregua al que intente de la patria manchar los blasones!</span><br>
+            <span class="verse">¡Guerra, guerra! Los patrios pendones en las olas de sangre empapad</span><br><br>
+
+            <span class="verse">¡Guerra, guerra! En el monte, en el valle los cañones horrísonos truenen</span><br>
+            <span class="verse">Y los ecos sonoros resuenen con las voces de ¡Unión! ¡Libertad!</span><br><br>
+
+            <span class="verse">Antes patria, que inermes tus hijos bajo el yugo su cuello dobleguen</span><br>
+            <span class="verse">Tus campiñas con sangre se rieguen sobre sangre se estampe su pie</span><br><br>
+
+            <span class="verse">Y tus templos, palacios y torres se derrumben con hórrido estruendo</span><br>
+            <span class="verse">Y sus ruinas existan diciendo de mil héroes la patria aquí fue</span><br><br>
+
+            <span class="verse">¡Patria! ¡Patria! Tus hijos te juran exhalar en tus aras su aliento</span><br>
+            <span class="verse">Si el clarín con su bélico acento los convoca a lidiar con valor</span><br><br>
+
+            <span class="verse">¡Para ti las guirnaldas de oliva!</span><br>
+            <span class="verse">¡Un recuerdo para ellos de gloria!</span><br>
+            <span class="verse">¡Un laurel para ti de victoria!</span><br>
+            <span class="verse">¡Un sepulcro para ellos de honor!</span><br><br>
+
+            <span class="verse">Mexicanos, al grito de guerra</span><br>
+            <span class="verse">El acero a prestad y el bridón</span><br>
+            <span class="verse">Y retiemble en sus centros la tierra</span><br>
+            <span class="verse">Al sonoro rugir del cañón</span><br>
+        </p>
+    </section>
+
+    <!-- Formulario para ingresar palabras -->
+    <section id="poem-generator">
+        <p class="poemaP">Escribe un verso del himno nacional, a continuación se mostrará su significado:</p>
+        <input type="text" id="wordInput" placeholder="Escribe una palabra...">
+        <button onclick="generatePoem()">Generar</button>
+        <p id="resultOutput"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
